@@ -1,0 +1,2 @@
+import {http} from '../../services/http';// Proposed endpoint names only; no mock success is returned.
+export const roomApi={create:(input:{maxPlayers:number;visibility:'private'|'public'})=>http.post('/rooms',input),join:(input:{code:string})=>http.post('/rooms/join',input)};
