@@ -1,0 +1,1 @@
+import {create} from 'zustand';import type {User} from './auth.types';interface State{user:User|null;initialized:boolean;setUser:(u:User)=>void;clear:()=>void}export const useAuthStore=create<State>(set=>({user:null,initialized:false,setUser:user=>set({user,initialized:true}),clear:()=>set({user:null,initialized:true})}));

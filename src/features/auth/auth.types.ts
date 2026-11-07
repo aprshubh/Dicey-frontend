@@ -1,0 +1,1 @@
+export interface User{id:string;name:string;email:string;avatarUrl?:string;createdAt?:string}export interface AuthResponse{success:boolean;message?:string;data:{user:User;tokens?:{accessToken?:string;refreshToken?:string}}}
